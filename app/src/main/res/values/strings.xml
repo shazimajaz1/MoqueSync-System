@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MoqueSync</string>
+    <string name="label_events">Events</string>
+    <string name="label_notifications">Notifications</string>
+    <string name="label_prayer_times">Prayer Times</string>
+    <string name="label_preferences">Preferences</string>
+    <string name="label_devices">Devices</string>
+</resources>
