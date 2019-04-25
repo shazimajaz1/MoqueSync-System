@@ -1,4 +1,4 @@
-package com.practice.moquesync;
+package com.practice.moquesync.operation_tests;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
