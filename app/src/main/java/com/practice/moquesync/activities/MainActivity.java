@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.practice.moquesync.R;
+import com.practice.moquesync.activities.navigation_activity.NavigationActivity;
 
 public class MainActivity extends AppCompatActivity {
 
