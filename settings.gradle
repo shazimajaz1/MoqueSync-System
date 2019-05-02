@@ -1,1 +1,1 @@
-include ':app'
+include ':worddef', ':worddefadmin', ':worddefscholar'

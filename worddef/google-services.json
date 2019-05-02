@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "122556365371",
+    "firebase_url": "https://mosquesync.firebaseio.com",
+    "project_id": "mosquesync",
+    "storage_bucket": "mosquesync.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122556365371:android:4a3e578ebf4e4f88",
+        "android_client_info": {
+          "package_name": "com.practice.moquesync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122556365371-1msnlf38n211pipahss4j6mr2tco7c7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjSHTc4bY0hPU5IbuJpWxL9zA1r8IGF3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122556365371-1msnlf38n211pipahss4j6mr2tco7c7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
