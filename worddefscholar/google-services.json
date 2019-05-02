@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "122556365371-npgkqenhv10htpkse4c8ad5soh2rvtdu.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.practice.moquesync",
-            "certificate_hash": "21b28fd18f51d4a12bb43534b6dbd29ea09548c1"
-          }
-        },
-        {
           "client_id": "122556365371-1msnlf38n211pipahss4j6mr2tco7c7o.apps.googleusercontent.com",
           "client_type": 3
         }
