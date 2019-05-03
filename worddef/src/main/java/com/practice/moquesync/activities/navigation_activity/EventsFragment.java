@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -54,7 +55,7 @@ public class EventsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         //Example of using FirebaseDatabase
-        final Context context = getActivity();
+        final TextView textView = getActivity().findViewById(R.id.textView);
 
         //Writing a value to the database
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -67,14 +68,18 @@ public class EventsFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 String value = dataSnapshot.getValue(String.class);
                 Log.d("database", "Value is:" + value);
+                textView.setText(value);
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 //Failed to read the value
                 databaseError.toException().printStackTrace();
+
             }
         });
+
+        myRef.setValue("Objective");
 
 
 

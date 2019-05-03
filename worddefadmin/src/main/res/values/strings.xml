@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">WordDefAdmin</string>
+    <string name="help_question_label">What is the issue that you are facing?</string>
+    <string name="label_send">Send</string>
+    <string name="label_enter_email">Enter your email address!</string>
 </resources>
