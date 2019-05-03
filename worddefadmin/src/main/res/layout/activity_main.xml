@@ -11,49 +11,53 @@
 
     <Button
         android:id="@+id/update_prayer_times"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="updatePrayerTimes"
         android:text="Update Prayer Times"
         app:layout_constraintBottom_toTopOf="@+id/add_remove_scholars"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/send_a_notification"
-        android:onClick="updatePrayerTimes"/>
+        style="@style/TextAppearance.AppCompat.Headline"/>
 
     <Button
         android:id="@+id/send_a_notification"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="manageEventsAndNotifications"
         android:text="Events And Notifications"
         app:layout_constraintBottom_toTopOf="@+id/update_prayer_times"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="manageEventsAndNotifications"/>
+        style="@style/TextAppearance.AppCompat.Headline"/>
 
     <Button
         android:id="@+id/add_remove_scholars"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="manageScholars"
         android:text="Manage Scholars"
         app:layout_constraintBottom_toTopOf="@+id/get_help_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_prayer_times"
-        android:onClick="manageScholars"/>
+        style="@style/TextAppearance.AppCompat.Headline"/>
 
     <Button
         android:id="@+id/get_help_button"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="getHelp"
         android:text="Get Help!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_remove_scholars"
-        android:onClick="getHelp"/>
+        style="@style/TextAppearance.AppCompat.Headline"/>
 </android.support.constraint.ConstraintLayout>
