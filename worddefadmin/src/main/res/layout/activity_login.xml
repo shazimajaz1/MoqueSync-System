@@ -1,76 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:padding="15dp">
-
+    android:padding="15dp"
+    tools:context=".LoginActivity">
 
 
     <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Email:"
-        style="@style/TextAppearance.AppCompat.Headline"/>
+        android:text="Email:" />
 
     <EditText
         android:id="@+id/login_email_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
         android:hint="Enter your email here!"
         android:inputType="textEmailAddress"
-        android:background="@drawable/edit_text_background"
-        android:padding="15dp"/>
+        android:padding="15dp" />
 
     <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="Password" />
+
     <EditText
-        android:id="@+id/login_edit_text"
+        android:id="@+id/login_password_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
         android:hint="Enter your password!"
         android:inputType="textPassword"
-        android:background="@drawable/edit_text_background"
         android:padding="15dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:baselineAligned="true">
+        android:baselineAligned="true"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_sign_in"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign In"
+            android:background="@drawable/edit_text_background"
             android:onClick="signIn"
-            android:background="@drawable/edit_text_background"/>
+            android:text="Sign In" />
 
         <Button
             android:id="@+id/button_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
             android:layout_marginLeft="20dp"
+            android:background="@drawable/edit_text_background"
             android:onClick="signUp"
-            android:background="@drawable/edit_text_background"/>
+            android:text="Sign Up" />
 
 
     </LinearLayout>
 
-
-
-
-
+    <ProgressBar
+        android:id="@+id/login_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:visibility="invisible"/>
 
 
 </LinearLayout>

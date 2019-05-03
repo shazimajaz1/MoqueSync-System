@@ -1,9 +1,11 @@
-package com.practice.worddefadmin;
+package com.practice.worddefadmin.get_help;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
+import com.practice.worddefadmin.R;
 
 public class GetHelpActivity extends AppCompatActivity {
 
@@ -30,8 +32,9 @@ public class GetHelpActivity extends AppCompatActivity {
      */
     public void sendEmail(View view) {
 
-        //Retrieve the Text from the text view
-
+        //Retrieve the Text from the edit text
+        EditText message_editText = findViewById(R.id.help_message_edit_text);
+        String message = message_editText.getText().toString();
 
         //Retrieve the user information.
 
@@ -39,4 +42,6 @@ public class GetHelpActivity extends AppCompatActivity {
         //Send the information to the developer in an email
 
     }
+
+
 }

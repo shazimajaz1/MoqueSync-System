@@ -20,7 +20,10 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/send_a_notification"
-        style="@style/TextAppearance.AppCompat.Headline"/>
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/send_a_notification"
@@ -33,7 +36,10 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style="@style/TextAppearance.AppCompat.Headline"/>
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/add_remove_scholars"
@@ -46,7 +52,10 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/update_prayer_times"
-        style="@style/TextAppearance.AppCompat.Headline"/>
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/get_help_button"
@@ -59,5 +68,9 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_remove_scholars"
-        style="@style/TextAppearance.AppCompat.Headline"/>
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
 </android.support.constraint.ConstraintLayout>

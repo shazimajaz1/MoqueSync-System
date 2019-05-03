@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GetHelpActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name=".get_help.GetHelpActivity"
+            android:parentActivityName=".MainActivity"
+            />
         <activity
             android:name=".ScholarManagerActivity"
             android:parentActivityName=".MainActivity" />

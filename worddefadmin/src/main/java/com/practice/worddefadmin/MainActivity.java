@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.practice.worddefadmin.get_help.GetHelpActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Setup initial data.
+        //Change the title of the activity
+        getSupportActionBar().setTitle("Admin Panel");
     }
 
     /*
