@@ -21,10 +21,9 @@
         android:id="@+id/login_email_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edit_text_background"
         android:hint="Enter your email here!"
         android:inputType="textEmailAddress"
-        android:padding="15dp" />
+        style="@style/edit_text_style" />
 
     <TextView
         style="@style/TextAppearance.AppCompat.Headline"

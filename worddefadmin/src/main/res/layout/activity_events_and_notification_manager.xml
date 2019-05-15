@@ -4,6 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EventsAndNotificationManagerActivity">
+    tools:context=".EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity"
+    android:padding="20dp">
 
+
+    <Button
+        android:id="@+id/btn_new_notification"
+        android:text="@string/label_new_notification"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update_remove_existing_notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/edit_text_background"
+        style="@style/larger_button_style"
+        android:onClick="createNewNotification"/>
+
+    <Button
+        android:id="@+id/btn_update_remove_existing_notification"
+        android:text="@string/label_update_remove_existing_notification"
+        app:layout_constraintBottom_toTopOf="@+id/btn_new_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_new_notification"
+        android:background="@drawable/edit_text_background"
+        style="@style/larger_button_style"
+        android:onClick="updateRemoveExistingNotifications"/>
+
+    <Button
+        android:id="@+id/btn_new_event"
+        android:text="@string/label_new_event"
+        app:layout_constraintBottom_toTopOf="@+id/btn_update_remove_existing_event"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_remove_existing_notification"
+        android:background="@drawable/edit_text_background"
+        style="@style/larger_button_style"
+        android:onClick="createNewEvent"
+
+        />
+
+    <Button
+        android:id="@+id/btn_update_remove_existing_event"
+        android:text="@string/label_update_remove_event"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_new_event"
+        android:background="@drawable/edit_text_background"
+        style="@style/larger_button_style"
+        android:onClick="updateRemoveExistingEvents"/>
 </android.support.constraint.ConstraintLayout>

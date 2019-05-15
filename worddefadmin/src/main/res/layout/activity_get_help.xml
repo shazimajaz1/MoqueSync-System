@@ -40,6 +40,7 @@ tools:context=".get_help.GetHelpActivity"
         android:layout_height="wrap_content"
         android:text="@string/label_send"
         android:layout_marginTop="20dp"
-        android:onClick="sendEmail"/>
+        android:onClick="sendEmail"
+        android:background="@drawable/edit_text_background"/>
 
 </LinearLayout>

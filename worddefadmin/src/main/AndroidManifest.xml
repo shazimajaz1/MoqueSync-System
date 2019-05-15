@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".EventsAndNotificationManagerActivities.UpdateExistingEvents"
+            android:parentActivityName=".EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity"/>
+        <activity android:name=".EventsAndNotificationManagerActivities.NewEvent"
+            android:parentActivityName=".EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity"/>
+        <activity android:name=".EventsAndNotificationManagerActivities.UpdateExistingNotifications"
+            android:parentActivityName=".EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity"/>
+        <activity android:name=".EventsAndNotificationManagerActivities.NewNotification"
+            android:parentActivityName=".EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity"/>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,20 +26,17 @@
         </activity>
         <activity
             android:name=".get_help.GetHelpActivity"
-            android:parentActivityName=".MainActivity"
-            />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ScholarManagerActivity"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".EventsAndNotificationManagerActivity"
+            android:name=".EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UpdatePrayerTimesActivity"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

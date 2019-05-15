@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.practice.worddefadmin.EventsAndNotificationManagerActivities.EventsAndNotificationManagerActivity;
 import com.practice.worddefadmin.get_help.GetHelpActivity;
 
 public class MainActivity extends AppCompatActivity {

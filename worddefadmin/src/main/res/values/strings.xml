@@ -3,4 +3,9 @@
     <string name="help_question_label">What is the issue that you are facing?</string>
     <string name="label_send">Send</string>
     <string name="label_enter_email">Enter your email address!</string>
+    <string name="label_new_notification">New Notification</string>
+    <string name="label_update_remove_existing_notification">Update/Remove Existing Notification</string>
+    <string name="label_new_event">New Event</string>
+    <string name="label_update_remove_event">Update/Remove Event</string>
+    <string name="title_activity_update_existing_event">UpdateExistingEvent</string>
 </resources>

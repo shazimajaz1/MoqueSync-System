@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventsAndNotificationManagerActivities.NewNotification"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/new_notification_inside_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+            <TextView
+                android:id="@+id/label_enter_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <EditText
+                android:id="@+id/new_notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Enter title of the notification!"
+                style="@style/edit_text_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_notification_inside_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <EditText
+                android:id="@+id/new_notification_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="6"
+                android:hint="Enter notification description here!"
+                android:lines="8"
+                android:layout_gravity="top|start"
+                android:scrollbars="vertical"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                style="@style/edit_text_style"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/new_notification_inside_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp">
+
+
+            <TextView
+                android:id="@+id/label_attachments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attach an Image: (Optional)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+            <LinearLayout
+                android:id="@+id/attachment_buttons_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_attach_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_attach_image"
+                    android:onClick="attachNewImage"
+                    />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp">
+
+            <Button
+                android:id="@+id/btn_send_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                style="@style/edit_text_style"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <ProgressBar
+                android:id="@+id/scroll_bar_sending_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_send_notification"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

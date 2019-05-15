@@ -52,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onStart();
 
         //Check if user is already signed in
+        //sample change
 
     }
 
