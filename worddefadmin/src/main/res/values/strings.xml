@@ -8,4 +8,11 @@
     <string name="label_new_event">New Event</string>
     <string name="label_update_remove_event">Update/Remove Event</string>
     <string name="title_activity_update_existing_event">UpdateExistingEvent</string>
+    <string name="label_title">Title:</string>
+    <string name="label_notification_description">Enter title of the notification!</string>
+    <string name="label_description">Description:</string>
+    <string name="label_edit_text_description">Enter notification description here!</string>
+    <string name="add_an_image_hint">Attach an Image: (Optional)</string>
+    <string name="firebase_notification_topic">NotificationTopic</string>
+    <string name="firebase_event_topic">EventTopic</string>
 </resources>

@@ -25,7 +25,7 @@
                 android:id="@+id/label_enter_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Title:"
+                android:text="@string/label_title"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
             <EditText
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Enter title of the notification!"
+                android:hint="@string/label_notification_description"
                 android:inputType="textPersonName" />
 
         </LinearLayout>
@@ -51,7 +51,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description:"
+                android:text="@string/label_description"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
             <EditText
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|start"
-                android:hint="Enter notification description here!"
+                android:hint="@string/label_edit_text_description"
                 android:inputType="textMultiLine"
                 android:lines="8"
                 android:maxLines="10"
@@ -82,7 +82,7 @@
                 android:id="@+id/label_attachments"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Attach an Image: (Optional)"
+                android:text="@string/add_an_image_hint"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
 
             <LinearLayout
@@ -114,18 +114,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Send"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+                android:text="@string/label_send"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:onClick="sendNotification"/>
 
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <ProgressBar
                 android:id="@+id/scroll_bar_sending_notification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btn_send_notification"
-                android:layout_centerInParent="true"
                 android:layout_marginTop="30dp"
-                android:visibility="invisible" />
+                android:visibility="invisible"
+                android:layout_centerInParent="true"/>
         </RelativeLayout>
+
+
 
 
     </LinearLayout>
