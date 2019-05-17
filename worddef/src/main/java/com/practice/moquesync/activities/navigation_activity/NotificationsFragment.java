@@ -1,7 +1,5 @@
 package com.practice.moquesync.activities.navigation_activity;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -18,7 +16,7 @@ public class NotificationsFragment extends Fragment {
     }
 
 
-    public static NotificationsFragment getInstance(){
+    public static NotificationsFragment getInstance() {
         return new NotificationsFragment();
     }
 

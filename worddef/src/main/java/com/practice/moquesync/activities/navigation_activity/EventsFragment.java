@@ -1,6 +1,5 @@
 package com.practice.moquesync.activities.navigation_activity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -35,7 +34,7 @@ public class EventsFragment extends Fragment {
     /*
         This static method return a simple instance of the the Events Fragment.
      */
-    public static EventsFragment newInstance(){
+    public static EventsFragment newInstance() {
 
         return new EventsFragment();
     }
@@ -80,7 +79,6 @@ public class EventsFragment extends Fragment {
         });
 
         myRef.setValue("Objective");
-
 
 
     }

@@ -62,7 +62,7 @@ public class PrayerTimesFragment extends Fragment {
         try {
 
             //Load the images into the image containers
-            loadWithGlide(R.drawable.fajar_prayer_time_card_image, R.id.fajar_image_holder );
+            loadWithGlide(R.drawable.fajar_prayer_time_card_image, R.id.fajar_image_holder);
             loadWithGlide(R.drawable.duhur_sun_image, R.id.duhur_image_holder);
             loadWithGlide(R.drawable.asar_afternoon_sun, R.id.asar_image_holder);
             loadWithGlide(R.drawable.maghrib_sunset_image, R.id.maghrib_image_holder);
@@ -78,7 +78,7 @@ public class PrayerTimesFragment extends Fragment {
     /*
         This method loads the provided image into the given container with Glide.
      */
-    private void loadWithGlide(int imageId, int imageContainerId) throws NullPointerException{
+    private void loadWithGlide(int imageId, int imageContainerId) throws NullPointerException {
 
         ImageView imageView = getActivity().findViewById(imageContainerId);
         Glide.with(this)

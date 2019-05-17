@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "122556365371-3ksjlcakndhbqfs5cv3rem5dhefr2gem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.moquesync",
+            "certificate_hash": "6b2bcfe3ad765d8d3567e97b3d6e3fc401bd10c8"
+          }
+        },
+        {
           "client_id": "122556365371-npgkqenhv10htpkse4c8ad5soh2rvtdu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -51,6 +59,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "122556365371-tsch5nc0d74d7p4pj3uge7akv2m1kiip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.worddefadmin",
+            "certificate_hash": "6b2bcfe3ad765d8d3567e97b3d6e3fc401bd10c8"
+          }
+        },
         {
           "client_id": "122556365371-mrodtr8s6kd8ve9jlrg7le5r04b08enc.apps.googleusercontent.com",
           "client_type": 1,

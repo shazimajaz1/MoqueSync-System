@@ -2,7 +2,6 @@
 
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -19,11 +18,11 @@
 
     <EditText
         android:id="@+id/login_email_edit_text"
+        style="@style/edit_text_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your email here!"
-        android:inputType="textEmailAddress"
-        style="@style/edit_text_style" />
+        android:inputType="textEmailAddress" />
 
     <TextView
         style="@style/TextAppearance.AppCompat.Headline"
@@ -74,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:visibility="invisible"/>
+        android:visibility="invisible" />
 
 
 </LinearLayout>

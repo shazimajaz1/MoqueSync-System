@@ -6,36 +6,35 @@
         android:id="@+id/nav_events"
         android:enabled="true"
         android:icon="@drawable/ic_nav_events"
-        app:showAsAction="ifRoom"
         android:title="@string/label_events"
-        />
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_notifications"
         android:enabled="true"
         android:icon="@drawable/ic_nav_notifications"
-        app:showAsAction="ifRoom"
-        android:title="@string/label_notifications"/>
+        android:title="@string/label_notifications"
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_prayer_times"
         android:enabled="true"
-        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_nav_prayer_timings"
         android:title="@string/label_prayer_times"
-        android:icon="@drawable/ic_nav_prayer_timings"/>
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_portable_devices"
         android:enabled="true"
-        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_nav_devices"
         android:title="@string/label_devices"
-        android:icon="@drawable/ic_nav_devices"/>
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/nav_preferences"
         android:enabled="true"
-        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_nav_preferences"
         android:title="@string/label_preferences"
-        android:icon="@drawable/ic_nav_preferences"/>
+        app:showAsAction="ifRoom" />
 
 </menu>

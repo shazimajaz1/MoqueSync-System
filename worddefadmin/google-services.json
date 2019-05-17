@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "122556365371-npgkqenhv10htpkse4c8ad5soh2rvtdu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.moquesync",
+            "certificate_hash": "21b28fd18f51d4a12bb43534b6dbd29ea09548c1"
+          }
+        },
+        {
           "client_id": "122556365371-1msnlf38n211pipahss4j6mr2tco7c7o.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -44,10 +52,55 @@
       },
       "oauth_client": [
         {
+          "client_id": "122556365371-tsch5nc0d74d7p4pj3uge7akv2m1kiip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.worddefadmin",
+            "certificate_hash": "6b2bcfe3ad765d8d3567e97b3d6e3fc401bd10c8"
+          }
+        },
+        {
           "client_id": "122556365371-mrodtr8s6kd8ve9jlrg7le5r04b08enc.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.practice.worddefadmin",
+            "certificate_hash": "21b28fd18f51d4a12bb43534b6dbd29ea09548c1"
+          }
+        },
+        {
+          "client_id": "122556365371-1msnlf38n211pipahss4j6mr2tco7c7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjSHTc4bY0hPU5IbuJpWxL9zA1r8IGF3U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "122556365371-1msnlf38n211pipahss4j6mr2tco7c7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122556365371:android:f3dcbd2dea7cb0c7",
+        "android_client_info": {
+          "package_name": "com.practice.worddefscholar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "122556365371-bf2hph5q5pubp8gr4t1iuqoap6o3ddkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.practice.worddefscholar",
             "certificate_hash": "21b28fd18f51d4a12bb43534b6dbd29ea09548c1"
           }
         },

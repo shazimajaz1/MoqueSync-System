@@ -1,8 +1,8 @@
 package com.practice.worddefadmin.EventsAndNotificationManagerActivities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.practice.worddefadmin.R;
@@ -14,7 +14,7 @@ public class EventsAndNotificationManagerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events_and_notification_manager);
 
-            getSupportActionBar().setTitle("Manage Notifications and Events");
+        getSupportActionBar().setTitle("Manage Notifications and Events");
     }
 
     /*
@@ -31,7 +31,7 @@ public class EventsAndNotificationManagerActivity extends AppCompatActivity {
         Launches a new activity that allows the user to view, edit and remove
         existing notifications.
      */
-    public void updateRemoveExistingNotifications(View view){
+    public void updateRemoveExistingNotifications(View view) {
         Intent intent = new Intent(this, UpdateExistingNotifications.class);
         startActivity(intent);
     }
@@ -40,7 +40,7 @@ public class EventsAndNotificationManagerActivity extends AppCompatActivity {
         Invoked when New Event button is clicked.
         Launches a new activity that allows  that allows the user to crate a new event
      */
-    public void createNewEvent(View view){
+    public void createNewEvent(View view) {
         Intent intent = new Intent(this, NewEvent.class);
         startActivity(intent);
 
@@ -50,7 +50,7 @@ public class EventsAndNotificationManagerActivity extends AppCompatActivity {
         Invoked when Update event button is clicked.
         Launches a new activity that allows the user to manage all the events.
      */
-    public void updateRemoveExistingEvents(View view){
+    public void updateRemoveExistingEvents(View view) {
         Intent intent = new Intent(this, UpdateExistingEvents.class);
         startActivity(intent);
 

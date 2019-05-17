@@ -1,7 +1,5 @@
 package com.practice.moquesync.activities.navigation_activity;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,7 +15,6 @@ public class PortableDevicesFragment extends Fragment {
     public PortableDevicesFragment() {
         // Required empty public constructor
     }
-
 
 
     @Override

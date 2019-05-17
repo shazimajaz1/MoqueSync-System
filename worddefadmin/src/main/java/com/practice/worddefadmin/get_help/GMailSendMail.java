@@ -1,4 +1,3 @@
-
 package com.practice.worddefadmin.get_help;
 
 public class GMailSendMail {
@@ -17,7 +16,7 @@ public class GMailSendMail {
         Constructor 1: Default Constructor:
         User must set all other fields manually to be able to send the email
      */
-    public GMailSendMail(){
+    public GMailSendMail() {
 
     }
 
@@ -28,7 +27,7 @@ public class GMailSendMail {
         @param: subjectText: String
         @param: messageText: String
      */
-    public GMailSendMail(String toAddress, String fromAddress, String subjectText, String messageText){
+    public GMailSendMail(String toAddress, String fromAddress, String subjectText, String messageText) {
         this.toAddress = toAddress;
         this.fromAddress = fromAddress;
         this.subjectText = subjectText;
@@ -38,16 +37,19 @@ public class GMailSendMail {
     /*
         Setters Methods:
      */
-    public void setToAddress(String toAddress){
+    public void setToAddress(String toAddress) {
         this.toAddress = toAddress;
     }
-    public void setFromAddress(String fromAddress){
+
+    public void setFromAddress(String fromAddress) {
         this.fromAddress = fromAddress;
     }
-    public void setSubjectText(String subjectText){
+
+    public void setSubjectText(String subjectText) {
         this.subjectText = subjectText;
     }
-    public void setMessageText(String messageText){
+
+    public void setMessageText(String messageText) {
         this.messageText = messageText;
     }
 
@@ -57,7 +59,7 @@ public class GMailSendMail {
         the user have specified all the fields. The email will not be sent
         without all those fields.
      */
-    public void send(){
+    public void send() {
 
     }
 

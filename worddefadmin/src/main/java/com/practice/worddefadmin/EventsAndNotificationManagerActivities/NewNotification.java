@@ -1,7 +1,8 @@
 package com.practice.worddefadmin.EventsAndNotificationManagerActivities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.practice.worddefadmin.R;
@@ -21,5 +22,6 @@ public class NewNotification extends AppCompatActivity {
         This method is invoked when attach image button is clicked.
      */
     public void attachNewImage(View view) {
+
     }
 }

@@ -1,270 +1,269 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".activities.navigation_activity.PrayerTimesFragment"
-    >
 
-    <!--Title Text of the Application-->
-    <TextView
-        android:id="@+id/navigation_fragment_title_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prayer Times:"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"/>
-
-    <!-- Fajar Prayer Time Car View -->
-    <android.support.v7.widget.CardView
-        android:id="@+id/fajar_prayer_time_card_view"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        app:cardCornerRadius="10dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".activities.navigation_activity.PrayerTimesFragment">
 
-        <RelativeLayout
-            android:id="@+id/fajar_relative_layout"
+        <!--Title Text of the Application-->
+        <TextView
+            android:id="@+id/navigation_fragment_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prayer Times:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline" />
+
+        <!-- Fajar Prayer Time Car View -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fajar_prayer_time_card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:id="@+id/fajar_image_holder"
+            <RelativeLayout
+                android:id="@+id/fajar_relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="fajar_rising_sun_image"
-                android:scaleType="fitXY"
-                />
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/fajar_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/fajar_image_holder"
-                android:text="Fajar"
-                android:padding="10dp"
-                />
+                <ImageView
+                    android:id="@+id/fajar_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="fajar_rising_sun_image"
+                    android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/fajar_prayer_time_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@id/fajar_image_holder"
-                android:text="5:15AM"
-                android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/fajar_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fajar_image_holder"
+                    android:padding="10dp"
+                    android:text="Fajar" />
+
+                <TextView
+                    android:id="@+id/fajar_prayer_time_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fajar_image_holder"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:text="5:15AM" />
 
 
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
 
-    <!--Duhur Prayer Time Card View -->
-    <android.support.v7.widget.CardView
-        android:id="@+id/duhur_prayer_time_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:cardCornerRadius="10dp">
-
-        <RelativeLayout
-            android:id="@+id/duhur_relative_layout"
+        <!--Duhur Prayer Time Card View -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/duhur_prayer_time_card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:id="@+id/duhur_image_holder"
+            <RelativeLayout
+                android:id="@+id/duhur_relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="duhur_sun_on_the_head_image"
-                android:cropToPadding="true"
-                android:scaleType="fitXY"/>
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/duhur_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Duhur"
-                android:layout_below="@id/duhur_image_holder"
-                android:padding="10dp"/>
+                <ImageView
+                    android:id="@+id/duhur_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="duhur_sun_on_the_head_image"
+                    android:cropToPadding="true"
+                    android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/duhur_prayer_time_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="1:30PM"
-                android:layout_below="@id/duhur_image_holder"
-                android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/duhur_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/duhur_image_holder"
+                    android:padding="10dp"
+                    android:text="Duhur" />
 
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/duhur_prayer_time_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/duhur_image_holder"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:text="1:30PM" />
 
-    <!-- Asar Prayer time card -->
-    <android.support.v7.widget.CardView
-        android:id="@+id/asar_prayer_time_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:cardCornerRadius="10dp">
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
 
-        <RelativeLayout
-            android:id="@+id/asar_relative_layout"
+        <!-- Asar Prayer time card -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/asar_prayer_time_card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
->
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:id="@+id/asar_image_holder"
+            <RelativeLayout
+                android:id="@+id/asar_relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="asar_after_noon_image"
-                android:scaleType="fitXY"/>
-            <TextView
-                android:id="@+id/asar_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Asar"
-                android:layout_below="@id/asar_image_holder"
-                android:padding="10dp"/>
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/asar_prayer_time_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="5:30PM"
-                android:layout_below="@id/asar_image_holder"
-                android:padding="10dp"/>
+                <ImageView
+                    android:id="@+id/asar_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="asar_after_noon_image"
+                    android:scaleType="fitXY" />
 
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/asar_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asar_image_holder"
+                    android:padding="10dp"
+                    android:text="Asar" />
 
-    <!--Maghrib Prayer Time Card-->
-    <android.support.v7.widget.CardView
-        android:id="@+id/maghrib_prayer_time_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/asar_prayer_time_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/asar_image_holder"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:text="5:30PM" />
 
-        <RelativeLayout
-            android:id="@+id/maghrib_relative_layout"
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--Maghrib Prayer Time Card-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/maghrib_prayer_time_card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:id="@+id/maghrib_image_holder"
+            <RelativeLayout
+                android:id="@+id/maghrib_relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="maghrib_setting_sun_image"
-                android:scaleType="fitXY"
-                />
-            <TextView
-                android:id="@+id/maghrib_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Maghrib"
-                android:layout_below="@id/maghrib_image_holder"
-                android:padding="10dp"/>
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/maghrib_prayer_time_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="7:00PM"
-                android:layout_below="@id/maghrib_image_holder"
-                android:padding="10dp"/>
+                <ImageView
+                    android:id="@+id/maghrib_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="maghrib_setting_sun_image"
+                    android:scaleType="fitXY" />
 
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/maghrib_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maghrib_image_holder"
+                    android:padding="10dp"
+                    android:text="Maghrib" />
 
-    <!-- Isha Prayer Time Card -->
-    <android.support.v7.widget.CardView
-        android:id="@+id/isha_prayer_time_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:cardCornerRadius="10dp">
+                <TextView
+                    android:id="@+id/maghrib_prayer_time_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/maghrib_image_holder"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:text="7:00PM" />
 
-        <RelativeLayout
-            android:id="@+id/isha_relative_layout"
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Isha Prayer Time Card -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/isha_prayer_time_card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
->
-            <ImageView
-                android:id="@+id/isha_image_holder"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:id="@+id/isha_relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="Isha Night Time Image"
-                android:scaleType="fitXY"/>
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/isha_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Isha"
-                android:layout_below="@id/isha_image_holder"
-                android:padding="10dp"/>
+                <ImageView
+                    android:id="@+id/isha_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Isha Night Time Image"
+                    android:scaleType="fitXY" />
 
-            <TextView
-                android:id="@+id/isha_prayer_time_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="9:00PM"
-                android:layout_below="@id/isha_image_holder"
-                android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/isha_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isha_image_holder"
+                    android:padding="10dp"
+                    android:text="Isha" />
 
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/isha_prayer_time_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/isha_image_holder"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:text="9:00PM" />
 
-    <!-- Jumma Prayer Time Card -->
-    <android.support.v7.widget.CardView
-        android:id="@+id/jumma_prayer_time_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        app:cardCornerRadius="10dp">
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
 
-        <RelativeLayout
-            android:id="@+id/jumma_relative_layout"
+        <!-- Jumma Prayer Time Card -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/jumma_prayer_time_card_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="10dp">
 
-            <ImageView
-                android:id="@+id/jumma_image_holder"
+            <RelativeLayout
+                android:id="@+id/jumma_relative_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="Friday_gathering_image"
-                android:scaleType="fitXY"/>
-            <TextView
-                android:id="@+id/jumma_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jumma"
-                android:layout_below="@id/jumma_image_holder"
-                android:padding="10dp"/>
+                android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/jumma_prayer_time_text_view_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="1:40PM"
-                android:layout_below="@id/jumma_image_holder"
-                android:padding="10dp"/>
+                <ImageView
+                    android:id="@+id/jumma_image_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Friday_gathering_image"
+                    android:scaleType="fitXY" />
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/jumma_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jumma_image_holder"
+                    android:padding="10dp"
+                    android:text="Jumma" />
 
-    </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/jumma_prayer_time_text_view_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jumma_image_holder"
+                    android:layout_alignParentEnd="true"
+                    android:padding="10dp"
+                    android:text="1:40PM" />
 
-</LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
 </ScrollView>
