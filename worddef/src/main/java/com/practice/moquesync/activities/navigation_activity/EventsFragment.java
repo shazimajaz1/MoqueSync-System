@@ -49,37 +49,5 @@ public class EventsFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_events, container, false);
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
-        //Example of using FirebaseDatabase
-        final TextView textView = getActivity().findViewById(R.id.textView);
-
-        //Writing a value to the database
-        final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("message1");
-        myRef.setValue("Hello World, This is Shazim");
-
-        //Red the same value from the database
-        myRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                String value = dataSnapshot.getValue(String.class);
-                Log.d("database", "Value is:" + value);
-                textView.setText(value);
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                //Failed to read the value
-                databaseError.toException().printStackTrace();
-
-            }
-        });
-
-        myRef.setValue("Objective");
-
-
-    }
 }
